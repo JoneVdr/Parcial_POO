@@ -8,3 +8,26 @@
 
 "A continuación, construye una aplicación que permita crear los tres tipos de cuentas. El ID tiene que ser un número entero incremental, el nombre del titular puede ser inventado, la fecha de apertura y fecha de vencimiento deben ser aleatorias siendo la fecha de apertura más antigua que la fecha de vencimiento, y el número de cuenta tiene que ser un número aleatorio de 12 dígitos. Cuando las cuentas estén iniciadas a un sueldo inicial de 10.000 €, transferir dinero de unas a otras las cantidades de 2000 €, ingresar 575 € y retirar dinero 78 €."
 
+class Cuenta_bancaria:
+    def __init__(self, ID, nombre_del_titular, fecha_apertura, numero_cuenta, saldo):
+        self.ID = ID
+        self.nombre_del_titular = nombre_del_titular
+        self.fecha_apertura = fecha_apertura
+        self.numero_cuenta = numero_cuenta
+        self.saldo = saldo
+
+    def get_ID(self):
+        return self.ID
+    def get_nombre_del_titular(self):
+        return self.nombre_del_titular
+    def get_fecha_apertura(self):
+        return self.fecha_apertura
+    def get_numero_cuenta(self):
+        return self.numero_cuenta
+    def get_saldo(self):
+        return self.saldo
+
+nombre_del_titular = input("Introduzca el nombre del titular: ")
+
+print(Cuenta_bancaria)
+
